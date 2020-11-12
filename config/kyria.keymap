@@ -54,10 +54,10 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&kp TAB  &kp Q &kp W &kp E &kp R &kp T                                            &kp Y &kp U  &kp I    &kp O   &kp P    &kp SE_AA
-	&lt LSFT ESC  &hm LSFT A &hm LCTL S &hm LALT D &hm LGUI F &kp G                      &kp H &hm LGUI J  &hm LALT K &hm LCTL L  &hm LSFT SE_OE &kp SE_AE
-	&kp LCTL &kp Z &kp X &kp C &kp V &kp B &lt LOWER BKSP &lt LOWER SPC         &lt RAISE RET  &lt RAISE RET &kp N &kp M  &kp COMMA &kp DOT &kp SE_QUES &kp DEL
-	              &kp LALT &kp LGUI &kp BKSP &lt LOWER SPC &lt RAISE ESC            &lt LOWER DEL  &lt RAISE RET  &mo NAV &none &mo ADJ
+	&kp TAB       &kp Q      &kp W      &kp E      &kp R         &kp T                                                  &kp Y   &kp U       &kp I      &kp O      &kp P          &kp SE_AA
+	&lt LSFT ESC  &hm LSFT A &hm LCTL S &hm LALT D &hm LGUI F    &kp G                                                  &kp H   &hm LGUI J  &hm LALT K &hm LCTL L &hm LSFT SE_OE &kp SE_AE
+	&kp LCTL      &kp Z      &kp X      &kp C      &kp V         &kp B  &none &none        &none         &none          &kp N   &kp M       &kp COMMA  &kp DOT    &kp SE_QUES    &kp DEL
+	              &kp LALT   &kp LGUI   &kp BKSP   &lt LOWER SPC &lt RAISE ESC             &lt LOWER DEL &lt RAISE RET  &mo NAV &none &mo ADJ
 			>;
 
 			sensor-bindings = <&inc_dec_cp M_VOLU M_VOLD &inc_dec_kp PGUP PGDN>;
@@ -66,8 +66,8 @@
 
 		lower_layer {
 			bindings = <
-	&trans    &kp EXCL    &kp SE_LCBR &kp SE_RCBR &kp SE_QUO2 &kp PRCNT                                        &kp SE_AMPR  &kp SE_PLUS  &kp SE_LESS &kp SE_GRTR &kp SE_ASTR  &kp SE_PIPE
-	&kp LALT  &kp SE_SLSH &kp SE_LPRN &kp SE_RPRN &kp SE_APOS &kp SE_GRV                                       &kp SE_AT    &kp SE_MINS  &kp SE_LCBR &kp SE_RCBR &kp SE_CIRC  &kp SE_PIPE
+	&trans    &kp EXCL    &kp SE_LCBR &kp SE_RCBR &kp SE_DIAE &kp PRCNT                                        &kp SE_AMPR  &kp SE_PLUS  &kp SE_LESS &kp SE_GRTR &kp SE_ASTR  &kp SE_PIPE
+	&kp LALT  &kp SE_SLSH &kp SE_LPRN &kp SE_RPRN &kp SE_APOS &kp SE_GRV                                       &kp SE_AT    &kp SE_MINS  &kp SE_LCBR &kp SE_RCBR &kp SE_CIRC  &kp SE_ACUT
 	&kp LCTL  &kp SE_BSLS &kp SE_ASTR &kp SE_DLR  &kp SE_SCLN &kp SE_HASH &trans &trans          &trans &trans &kp SE_TILD  &kp SE_UNDS  &kp SE_SCLN &kp SE_COLN &kp SE_EQL   &kp SE_TILD
 	                                      &trans      &trans      &trans      &trans &trans          &trans &trans &trans      &trans      &trans
 			>;
@@ -78,9 +78,9 @@
 
 		raise_layer {
 			bindings = <
-	&kp F7     &kp F8     &kp F9     &kp F10      &kp F11      &kp F12                                       &kp SE_ASTR &kp N7  &kp N8  &kp N9  &kp N0 &trans
-	&kp F1     &kp F2     &kp F3     &kp F4       &kp F5       &kp F6                                        &kp SE_PLUS &kp N4  &kp N5  &kp N6  &trans &trans
-	&trans     &trans     &kp SE_PND &kp SE_EURO  &kp SE_HALF  &kp SE_CURR &trans &trans     &trans  &trans  &kp SE_MINS &kp N1  &kp N2  &kp N3  &trans &trans
+	&kp F7     &kp F8      &kp F9     &kp F10      &kp F11      &kp F12                                       &kp SE_ASTR &kp N7  &kp N8  &kp N9  &kp N0 &trans
+	&kp F1     &kp F2      &kp F3     &kp F4       &kp F5       &kp F6                                        &kp SE_PLUS &kp N4  &kp N5  &kp N6  &trans &trans
+	&trans     &kp SE_MICR &kp SE_PND &kp SE_EURO  &kp SE_HALF  &kp SE_CURR &trans &trans     &trans  &trans  &kp SE_MINS &kp N1  &kp N2  &kp N3  &trans &trans
 	                                 &trans       &trans       &trans  &trans &trans         &trans  &trans  &trans &kp N0  &trans
 			>;
 
