@@ -54,9 +54,9 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&kp TAB       &kp Q      &kp W      &kp E      &kp R         &kp T                                                  &kp Y   &kp U       &kp I      &kp O      &kp P          &kp SE_AA
-	&mt LSFT ESC  &hm LSFT A &hm LCTL S &hm LALT D &hm LGUI F    &kp G                                                  &kp H   &hm LGUI J  &hm LALT K &hm LCTL L &hm LSFT SE_OE &kp SE_AE
-	&kp LCTL      &kp Z      &kp X      &kp C      &kp V         &kp B  &none &none        &none         &none          &kp N   &kp M       &kp COMMA  &kp DOT    &kp SE_QUES    &kp DEL
+	&kp TAB       &kp Q      &kp W      &kp E      &kp R         &kp T                                                  &kp Y  &kp U  &kp I      &kp O    &kp P        &kp SE_AA
+	&mt LSFT ESC  &kp A      &kp S      &kp D      &hm F         &kp G                                                  &kp H  &kp J  &kp K      &kp L    &kp SE_OE    &kp SE_AE
+	&kp LCTL      &kp Z      &kp X      &kp C      &kp V         &kp B  &none &none        &none         &none          &kp N  &kp M  &kp COMMA  &kp DOT  &kp SE_QUES  &kp DEL
 	              &kp LALT   &kp LGUI   &kp BKSP   &lt LOWER SPC &lt RAISE ESC             &lt LOWER DEL &lt RAISE RET  &mo NAV &none &mo ADJ
 			>;
 
