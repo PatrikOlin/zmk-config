@@ -42,7 +42,7 @@
         combo_tab {
             timeout-ms = <FAST_COMBO_TIMEOUT>;
             key-positions = <15 16>;
-            bindings = <&kp ESC>;
+            bindings = <&kp TAB>;
         };
     };
 };
