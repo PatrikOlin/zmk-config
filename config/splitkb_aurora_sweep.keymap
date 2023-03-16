@@ -67,6 +67,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LS(LG(LC(LALT)))>, <&mo ADJ>;
+        };
     };
 
 };
@@ -95,7 +102,7 @@
    &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y &kp U       &kp I       &kp O      &kp P
    &hm LGUI A &hm LALT S &hm LCTL D &hm LSFT F &kp G          &kp H &hm LSFT J  &hm LCTL K  &hm LALT L &hm LGUI SE_OE
    &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N &kp M       &kp CMMA    &kp DOT    &kp SE_QUES
-                                    &kp BKSP   &lt LOWER SPC  &lt RAISE RET     &mo ADJ
+                                    &kp BKSP   &lt LOWER SPC  &lt RAISE RET     &td0
                         >;
                 };
                 lower_layer {
@@ -108,7 +115,7 @@
    &kp EXCL    &kp SE_LBRC &kp SE_RBRC &kp SE_DQUO &kp PRCNT      &kp SE_AMPR &kp SE_ACUT &kp SE_LT   &kp SE_GT   &kp SE_ASTR
    &kp SE_SLSH &kp SE_LPRN &kp SE_RPRN &kp SE_QUOT &kp SE_GRV     &kp SE_AT   &kp SE_MINS &kp SE_LCBR &kp SE_RCBR &kp SE_CIRC
    &kp SE_BSLS &kp SE_ASTR &kp SE_DLR  &kp SE_SCLN &kp SE_HASH    &kp SE_TILD &kp SE_UNDS &kp SE_SCLN &kp SE_CLN  &kp SE_EQL
-                                       &trans      &trans         &trans      &trans
+                                       &mo ADJ     &trans         &trans      &trans
                         >;
                 };
 
@@ -122,7 +129,7 @@
    &kp F8      &kp F9     &kp F10    &kp F11     &kp F12           &kp SE_ASTR &kp N7 &kp N8 &kp N9 &kp N0
    &kp F2      &kp F3     &kp F4     &kp F5      &kp F6            &kp SE_PLUS &kp N4 &kp N5 &kp N6 &trans
    &kp SE_PIPE &kp SE_PND &kp SE_EUR &kp SE_DIAE &kp SE_MICR       &kp SE_MINS &kp N1 &kp N2 &kp N3 &trans
-                                     &trans      &trans            &trans      &kp 0
+                                     &mo ADJ     &trans            &trans      &kp 0
                         >;
                 };
 
