@@ -72,7 +72,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LS(LG(LC(LALT)))>, <&mo ADJ>;
+            bindings = <&kp LS(LG(LC(LALT)))>, <&sl ADJ>;
         };
     };
 
